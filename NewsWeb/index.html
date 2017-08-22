@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>仲大校园新闻网</title>
+  <meta name="keywords" content="仲院  资讯 体育 新闻 科技 生活 学习 工作" />
+  <meta name="description" content="仲大校园新闻网是为广大仲大学生提供一个知晓校园生活各大新闻娱乐八卦学习工作的一个良好平台，广受学生欢迎" />
+  <link rel="stylesheet" href="Public/css/bootstrap.min.css" type="text/css" />
+  <script type="text/javascript" src="Public/js/jquery.js" ></script>
+  <link rel="stylesheet" href="Public/css/home/main.css" type="text/css" />
+</head>
+<body>
+<header id="header">
+  <div class="navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/">
+          <img src="Public/images/logo.jpg" alt="">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="/NewsWeb/index.php" class="curr">首页</a></li>
+        <!-- 	前端标签的显示 -->
+        <li><a href="/NewsWeb/index.php?c=cat&id=7" >国际</a></li><li><a href="/NewsWeb/index.php?c=cat&id=8" >校园</a></li><li><a href="/NewsWeb/index.php?c=cat&id=9" >学习</a></li><li><a href="/NewsWeb/index.php?c=cat&id=10" >娱乐</a></li><li><a href="/NewsWeb/index.php?c=cat&id=11" >体育</a></li>      </ul>
+      <!--//增加搜索框-->
+      <form action="http://localhost/NewsWeb/index.php?c=search&a=index" method="post" target="_blank">
+      	<div class="input-group" id="reserch" style="margin-top:20px;float: right;">
+              <input class="form-control" name="title" type="text" value="" placeholder="文章标题" style="width: 320px;"/>
+                <span >
+                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+         </div>
+      </form>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-9">
+        <div class="banner">
+        	<!-- 首页大图  -->
+          <div class="banner-left">
+            <div class="banner-info"><span>阅读数</span>
+            	<i class="news_count node-5" news-id="" id="node-5"></i>
+            </div>
+            <a target="_blank" href="/NewsWeb/index.php?c=detail&id=5">
+            	<img width="670" height="360" src="/NewsWeb/upload/2017/06/19/59479bccc879d.jpg" alt=""></a>
+          </div>
+          <div class="banner-right">
+            <ul>
+              <li>
+                <a target="_blank" href="/NewsWeb/index.php?c=detail&id=30">
+                <img width="150" height="113" src="/NewsWeb/upload/2017/06/20/59489977ce1c2.png" alt="6月18号 放假"></a>
+              </li><li>
+                <a target="_blank" href="/NewsWeb/index.php?c=detail&id=6">
+                <img width="150" height="113" src="/NewsWeb/upload/2017/06/19/59479988de29c.jpg" alt="校园足球杯"></a>
+              </li><li>
+                <a target="_blank" href="/NewsWeb/index.php?c=detail&id=2">
+                <img width="150" height="113" src="/NewsWeb/upload/2017/06/19/59479a0034714.jpg" alt="元旦晚会"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="news-list">
+          <dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=30">6月18号 放假</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=30">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/20/59489977ce1c2.png" alt="6月18号 放假"></a>
+            </dd>
+            <dd class="news-intro">
+              暑假 通知            </dd>
+            <dd class="news-info">
+              暑假 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="30" class="news_count node-30">1</i>)
+            </dd>
+          </dl><dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=29">学php，找中大</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=29">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/19/5947b1da061cc.jpg" alt="学php，找中大"></a>
+            </dd>
+            <dd class="news-intro">
+              学php，中大是专业的            </dd>
+            <dd class="news-info">
+              php 中大 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="29" class="news_count node-29">0</i>)
+            </dd>
+          </dl><dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=28">学java，找仲大</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=28">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/19/5947b14099a0e.jpg" alt="学java，找仲大"></a>
+            </dd>
+            <dd class="news-intro">
+              学习java，仲大是专业的            </dd>
+            <dd class="news-info">
+              java 仲大 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="28" class="news_count node-28">0</i>)
+            </dd>
+          </dl><dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=6">校园足球杯</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=6">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/19/59479988de29c.jpg" alt="校园足球杯"></a>
+            </dd>
+            <dd class="news-intro">
+              足球赛            </dd>
+            <dd class="news-info">
+              报名 足球带 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="6" class="news_count node-6">1</i>)
+            </dd>
+          </dl><dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=5">习近平总书记访问美国</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=5">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/19/59479bccc879d.jpg" alt="习近平总书记访问美国"></a>
+            </dd>
+            <dd class="news-intro">
+              主席访问美国            </dd>
+            <dd class="news-info">
+              美国 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="5" class="news_count node-5">12</i>)
+            </dd>
+          </dl><dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=4">黄小姐您好</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=4">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/19/59479ac2625df.jpg" alt="黄小姐您好"></a>
+            </dd>
+            <dd class="news-intro">
+              大明星            </dd>
+            <dd class="news-info">
+              明星 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="4" class="news_count node-4">6</i>)
+            </dd>
+          </dl><dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=2">元旦晚会</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=2">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/19/59479a0034714.jpg" alt="元旦晚会"></a>
+            </dd>
+            <dd class="news-intro">
+              1yue1ri元旦晚会            </dd>
+            <dd class="news-info">
+              元旦，晚会 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="2" class="news_count node-2">3</i>)
+            </dd>
+          </dl><dl>
+            <dt><a target="_blank" href="/NewsWeb/index.php?c=detail&id=1">16周周六英语四六级考试</a></dt>
+            <dd class="news-img">
+              <a target="_blank" href="/NewsWeb/index.php?c=detail&id=1">
+              	<img width="200" height="120" src="/NewsWeb/upload/2017/06/19/59479c05b34c4.jpg" alt="16周周六英语四六级考试"></a>
+            </dd>
+            <dd class="news-intro">
+              全国统一的英语四六级考试            </dd>
+            <dd class="news-info">
+              四六级 <span>1970-01-01 08:00:00</span> 阅读(<i news-id="1" class="news_count node-1">9</i>)
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <!--网站右侧信息-->
+      <div class="col-sm-3 col-md-3">
+  <div class="right-title">
+    <h3>文章排行</h3>
+    <span>TOP ARTICLES</span>
+  </div>
+
+  <div class="right-content">
+    <ul>
+      <li class="num1 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=5">访问美国</a>
+        <div class="intro">
+          主席访问美国        </div>      </li><li class="num2 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=1">四六级考试</a>
+              </li><li class="num3 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=4">hello mis huang</a>
+              </li><li class="num4 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=2">晚会</a>
+              </li><li class="num5 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=6">足球赛</a>
+              </li><li class="num6 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=30">放假</a>
+              </li><li class="num7 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=28">java</a>
+              </li><li class="num8 curr">
+        <a target="_blank" href="/NewsWeb/index.php?c=detail&id=29">php</a>
+              </li>    </ul>
+  </div>
+  <div class="right-hot">
+    <a target="_blank" href=""><img src="/NewsWeb/upload/2017/06/19/5947b1da061cc.jpg" alt=""></a>
+  </div><div class="right-hot">
+    <a target="_blank" href=""><img src="/NewsWeb/upload/2017/06/19/5947b14099a0e.jpg" alt=""></a>
+  </div></div>
+    </div>
+  </div>
+</section>
+</body>
+<script src="Public/js/jquery.js"></script>
+<script src="Public/js/count.js"></script>
+</html>

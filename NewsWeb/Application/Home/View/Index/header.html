@@ -1,0 +1,43 @@
+<?php
+   $config = D("Basic")->select();
+   $navs = D("Menu")->getBarMenus();
+?>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{$config.title}</title>
+  <meta name="keywords" content="{$config.keywords}" />
+  <meta name="description" content="{$config.description}" />
+  <link rel="stylesheet" href="Public/css/bootstrap.min.css" type="text/css" />
+  <script type="text/javascript" src="Public/js/jquery.js" ></script>
+  <link rel="stylesheet" href="Public/css/home/main.css" type="text/css" />
+</head>
+<body>
+<header id="header">
+  <div class="navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/">
+          <img src="Public/images/logo.jpg" alt="">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="/NewsWeb/index.php" <if condition="$result['catId'] eq 0">class="curr"</if>>首页</a></li>
+        <!-- 	前端标签的显示 -->
+        <foreach name="navs" item="vo">
+          <li><a href="/NewsWeb/index.php?c=cat&id={$vo.menu_id}" <if condition="$vo['menu_id'] eq $result['catId']">class="curr"</if>>{$vo.name}</a></li>
+        </foreach>
+      </ul>
+      <!--//增加搜索框-->
+      <form action="http://localhost/NewsWeb/index.php?c=search&a=index" method="post" target="_blank">
+      	<div class="input-group" id="reserch" style="margin-top:20px;float: right;">
+              <input class="form-control" name="title" type="text" value="" placeholder="文章标题" style="width: 320px;"/>
+                <span >
+                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+         </div>
+      </form>
+    </div>
+  </div>
+</header>
